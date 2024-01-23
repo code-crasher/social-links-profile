@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Inter-Variable";
+  src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "Inter-Variable" sans-serif;
+  letter-spacing: 1px;
+  background-color: hsl(0, 0%, 8%);
+  width: 100vw;
+  height: 100vh;
+  color: hsl(0, 0%, 100%);
+}
+img,
+svg,
+figure {
+  display: block;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card {
+  width: 90%;
+  height: 83%;
+  background-color: hsl(0, 0%, 12%);
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 6px;
+}
+p:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+p:nth-of-type(2) {
+  color: hsl(75, 94%, 57%);
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+p:nth-of-type(3) {
+  margin-bottom: 1rem;
+}
+img {
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50vmax;
+}
+.btn {
+  background-color: hsl(0, 0%, 20%);
+  display: block;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  padding-block: 1em;
+  border-radius: 6px;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 1px;
+}
+.btn:hover,
+.btn:focus {
+  background-color: hsl(75, 94%, 57%);
+  color: hsl(0, 0%, 8%);
+}
+
+@media (min-width: 375px) {
+  .card {
+    width: 350px;
+    height: 400px;
+    gap: 0.5rem;
+  }
+  .btn {
+    padding-block: 0.5em;
+  }
+  p:nth-of-type(3) {
+    margin-bottom: 0.25rem;
+  }
+  p:nth-of-type(2) {
+    margin-bottom: 0.25rem;
+  }
+}
